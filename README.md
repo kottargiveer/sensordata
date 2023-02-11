@@ -13,3 +13,6 @@ s3, NaN,NaN,NaN
 Num of processed files: 2
 Num of processed measurements: 7
 Number of failed meaasurements: 2
+
+
+Note : Not the expected output but I'm close to it.
