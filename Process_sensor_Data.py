@@ -11,17 +11,17 @@ def read_csv_files(folder_path):
                 header = next(reader)  # Skip the header row
                 for row in reader:
                     sensor = row[0]
-                    salary = float(row[1])
-                    result[sensor].append(salary)
+                    humidity = float(row[1])
+                    result[sensor].append(humidity)
     return result
 
 def calculate_statistics(data):
     result = {}
     for sensor, humidity in data.items():
         avg = sum(humidity) / len(humidity)
-        min_salary = min(humidity)
-        max_salary = max(humidity)
-        result[sensor] = (min_salary,avg, max_salary)
+        min_humidity = min(humidity)
+        max_humidity = max(humidity)
+        result[sensor] = (min_humidity,avg, max_humidity)
     return result
 
 if __name__ == "__main__":
